@@ -35,6 +35,11 @@ img {
     overflow: ;
 }    */
 
+.container {
+    width: 800px;
+    height: 800px;
+}
+
 #position-a{
     width: 800px;
     height: 800px;
