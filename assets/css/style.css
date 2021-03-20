@@ -1,45 +1,15 @@
-
-
-
-
-/*
 .container {
-    width: 1224px;
-}
-
-
-.doroga {
-    width: 1224px;
-    background-image: url(../img/road.png);
+    
+    width: 900px;
+    height: 800px;
+    background-image:url(../img/road.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
-    border: 0px;
-    padding:0px;
 }
-
 
 /*
-img {
-   
-    
-    /*
-    width: 100px;
-    
-    
-    
-    object-fit: contain;
-    
-    
-    overflow: ;
-}    */
-
-.container {
-    width: 800px;
-    height: 800px;
-}
-
 #position-a{
     width: 800px;
     height: 800px;
@@ -51,7 +21,7 @@ img {
     position: absolute;
     
 }
-
+*/
 
 #car {
 
