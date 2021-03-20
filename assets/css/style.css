@@ -1,0 +1,150 @@
+
+
+
+
+/*
+.container {
+    width: 1224px;
+}
+
+
+.doroga {
+    width: 1224px;
+    background-image: url(../img/road.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    padding:0px;
+}
+
+
+/*
+img {
+   
+    
+    /*
+    width: 100px;
+    
+    
+    
+    object-fit: contain;
+    
+    
+    overflow: ;
+}    */
+
+#position-a{
+    width: 800px;
+    height: 800px;
+    
+    background-image:url(../img/road.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    
+}
+
+
+#car {
+
+    width: 130px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 110px;
+    right: 450px;
+    animation-name: trip;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+
+}
+
+
+@keyframes trip{
+    25% { 
+        transform: rotate(180deg);
+        right: 900px;
+        
+    }
+    
+    35% { 
+        transform: rotate(120deg);
+        right: 970px;
+        top: 140px;
+        
+    } 
+
+    37% {
+        transform: rotate(100deg);
+        right: 1000px;
+        top: 140px;
+
+    }
+
+    43% {
+        transform: rotate(90deg);
+        right: 1000px;
+        top: 630px;
+    }
+
+
+    45% {
+        transform: rotate(45deg);
+        right: 1000px;
+        top: 650px;
+
+    }
+
+    57% {
+        transform: rotate(0deg);
+        right: 900px;
+        top: 710px;
+
+    }
+
+
+    70% {
+        transform: rotate(0deg);
+        right: 500px;
+        top: 710px;
+    }
+
+
+    75% {
+        transform: rotate(-55deg);
+        right: 410px;
+        top: 710px;
+    }
+
+    80% {
+        transform: rotate(-90deg);
+        right: 400px;
+        top: 690px;
+    }
+
+    95% {
+        transform: rotate(-90deg);
+        right: 400px;
+        top: 200px;
+    }
+
+    97% {
+        transform: rotate(-120deg);
+        right: 400px;
+        top: 180px;
+    }
+
+    100% {
+        transform: rotate(-180deg);
+        right: 430px;
+        top: 110px;
+    }
+
+
+
+    
+}    
+
