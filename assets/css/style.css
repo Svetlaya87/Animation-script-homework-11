@@ -1,12 +1,13 @@
-.container {
+.sv-container {
     
     width: 900px;
     height: 800px;
     background-image:url(../img/road.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
+    margin: 10px auto;
 }
 
 
@@ -26,15 +27,16 @@
 */
 
 #car {
-
+    height: 64px;
     width: 130px;
     transform: rotate(180deg);
-    position: absolute;
-    top: 110px;
-    right: 450px;
+    position: relative;
+    top: 47px;
+    left: 300px;
     animation-name: trip;
     animation-duration: 8s;
     animation-iteration-count:infinite;
+    
     animation-timing-function: ease;
 
 }
@@ -43,81 +45,93 @@
 @keyframes trip{
     25% { 
         transform: rotate(180deg);
-        right: 900px;
+        left: -180px;
         
     }
     
-    35% { 
-        transform: rotate(120deg);
-        right: 970px;
-        top: 140px;
+    
+    35% {  /*поворот слева на право вниз*/
+        transform: rotate(135deg);
+        top: 47px;  
+        left: -300px;
+        
         
     } 
 
-    37% {
+        
+    37% {  /*поворот слева на право вниз*/
         transform: rotate(100deg);
-        right: 1000px;
-        top: 140px;
+        left: -340px;
+        top: 50px;
 
     }
 
-    43% {
+        
+    43% {   /*поворот слева на право вниз и спуск вниз нижний левый угол*/
         transform: rotate(90deg);
-        right: 1000px;
+        left: -340px;
         top: 630px;
     }
 
 
-    45% {
+    
+    45% {  /*поворот сверху вниз и вправо */
         transform: rotate(45deg);
-        right: 1000px;
+        left: -340px;
         top: 650px;
 
     }
 
-    57% {
+    
+
+    57% {  /*поворот сверху вниз и вправо */
         transform: rotate(0deg);
-        right: 900px;
-        top: 710px;
+        left: -310px;
+        top: 730px;
 
     }
 
-
-    70% {
+    
+    70% { /*проезд из ниженего левого угла в правый нижний угол */
         transform: rotate(0deg);
-        right: 500px;
-        top: 710px;
+        left: 100px;
+        top: 730px;
     }
+    
 
-
-    75% {
+    75% {  /*поворот с правого нижнего угла на верх*/
         transform: rotate(-55deg);
-        right: 410px;
-        top: 710px;
+        left: 300px;
+        top: 730px;
     }
 
-    80% {
+    
+    80% {  /*поворот с правого нижнего угла на верх*/
         transform: rotate(-90deg);
-        right: 400px;
-        top: 690px;
+        left: 340px;
+        top: 720px;
     }
 
-    95% {
+
+        
+    95% {  /*проезд с правого нижнего угла в правый верхний угол*/
         transform: rotate(-90deg);
-        right: 400px;
+        left: 340px;
         top: 200px;
     }
 
-    97% {
+        
+    97% { /*поворот с правого верхнего угла влево*/
         transform: rotate(-120deg);
-        right: 400px;
+        left: 340px;
         top: 180px;
     }
 
-    100% {
+    
+    100% { /*возврат на старт*/
         transform: rotate(-180deg);
-        right: 430px;
-        top: 110px;
+        left: 300px;
+        top: 47px;
     }
 
 
