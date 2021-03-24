@@ -30,9 +30,9 @@
     height: 64px;
     width: 130px;
     transform: rotate(180deg);
-    position: relative;
-    top: 47px;
-    left: 300px;
+    position: absolute;
+    top: 95px; /*47*/
+    left: 600px; /*300*/
     animation-name: trip;
     animation-duration: 8s;
     animation-iteration-count:infinite;
@@ -45,93 +45,93 @@
 @keyframes trip{
     25% { 
         transform: rotate(180deg);
-        left: -180px;
+        left: 120px; /*-180*/
         
     }
     
     
     35% {  /*поворот слева на право вниз*/
         transform: rotate(135deg);
-        top: 47px;  
-        left: -300px;
+        left: 120px; /*300*/
+        top: 95px;  /*47*/
         
         
     } 
 
-        
+     
     37% {  /*поворот слева на право вниз*/
         transform: rotate(100deg);
-        left: -340px;
-        top: 50px;
+        left: 45px; /*-340*/
+        top: 97px; /*50*/
 
     }
 
-        
+      
     43% {   /*поворот слева на право вниз и спуск вниз нижний левый угол*/
         transform: rotate(90deg);
-        left: -340px;
-        top: 630px;
+        left: 45px;
+        top: 677px; /*630*/
     }
 
-
+    
     
     45% {  /*поворот сверху вниз и вправо */
         transform: rotate(45deg);
-        left: -340px;
-        top: 650px;
+        left: 45px;
+        top: 697px;
 
     }
 
     
-
+    
     57% {  /*поворот сверху вниз и вправо */
         transform: rotate(0deg);
-        left: -310px;
-        top: 730px;
+        left: 70px;
+        top: 775px;
 
     }
 
     
     70% { /*проезд из ниженего левого угла в правый нижний угол */
         transform: rotate(0deg);
-        left: 100px;
-        top: 730px;
+        left: 550px;
+        top: 775px;
     }
     
-
+    
     75% {  /*поворот с правого нижнего угла на верх*/
         transform: rotate(-55deg);
-        left: 300px;
-        top: 730px;
+        left: 700px;
+        top: 775px;
     }
 
     
     80% {  /*поворот с правого нижнего угла на верх*/
         transform: rotate(-90deg);
-        left: 340px;
+        left: 730px;
         top: 720px;
     }
 
-
+    
         
     95% {  /*проезд с правого нижнего угла в правый верхний угол*/
         transform: rotate(-90deg);
-        left: 340px;
+        left: 730px;
         top: 200px;
     }
 
-        
+       
     97% { /*поворот с правого верхнего угла влево*/
         transform: rotate(-120deg);
-        left: 340px;
-        top: 180px;
+        left: 700px;
+        top: 130px;
     }
 
     
     100% { /*возврат на старт*/
         transform: rotate(-180deg);
-        left: 300px;
-        top: 47px;
+        left: 600px;
+        top: 95px;
     }
 
 
